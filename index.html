@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>survay</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="text-center m2">My Personal Survey Form</h1>
+        <p class="text-center m2">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <form action="mailto:pradumkumardubey@gmail.com" class="container" method="post" enctype="text/plain">
+        <div class="box">
+            <label for="name" class="title">Name</label>
+            <input type="text" name="yourName" class="form-control" placeholder="Enter your name" id="name">
+        </div>
+        <div class="box">
+            <label for="Email" class="title">Email</label>
+            <input type="email" name="yourEmail" class="form-control" placeholder="Enter your Email" id="Email">
+        </div>
+        <div class="box">
+            <label for="age" class="title">Age</label>
+            <input type="number" name="yourAge" class="form-control" min="10" max="99" placeholder="Enter your Age"
+                id="age">
+        </div>
+        <div class="box">
+            <p class="title">Which option best describes your current role?</p>
+            <select id="most-like" name="currentRole" class="form-control" required="">
+                <option disabled="" selected="" value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+            </select>
+        </div>
+        <div class="box">
+            <p class="title">Would you recommend me to your friends?</p>
+            <label><input name="friendRecommend" value="definitely" type="radio" class="input-radio"
+                    checked="">definitely</label>
+            <label><input name="friendRecommend" value="maybe" type="radio" class="input-radio">maybe</label>
+            <label><input name="friendRecommend" value="not sure" type="radio" class="input-radio">not sure</label>
+        </div>
+        <div class="box">
+            <p class="title">What is your favorite feature of College?</p>
+            <select id="most-like" name="feature" class="form-control" required="">
+                <option disabled="" selected="" value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+            </select>
+        </div>
+        <div class="box">
+            <p class="title">What would you like to see improved? (Check all that apply)</p>
+            <label><input name="improved" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end
+                Projects</label>
+            <label><input name="improved" value="Back-end Projects" type="checkbox" class="input-checkbox">Back-end
+                Projects</label>
+            <label><input name="improved" value="Data Visualization" type="checkbox" class="input-checkbox">Data
+                Visualization</label>
+            <label><input name="improved" value="Challenges" type="checkbox" class="input-checkbox">Challenges</label>
+            <label><input name="improved" value="Open Source Community" type="checkbox" class="input-checkbox">Open Source
+                Community</label>
+            <label><input name="improved" value="Gitter help rooms" type="checkbox" class="input-checkbox">Gitter help
+                rooms</label>
+            <label><input name="improved" value="Videos" type="checkbox" class="input-checkbox">Videos</label>
+            <label><input name="improved" value="City Meetups" type="checkbox" class="input-checkbox">City Meetups</label>
+            <label><input name="improved" value="Wiki" type="checkbox" class="input-checkbox">Wiki</label>
+            <label><input name="improved" value="Forum" type="checkbox" class="input-checkbox">Forum</label>
+            <label><input name="improved" value="Additional Courses" type="checkbox" class="input-checkbox">Additional
+                Courses</label>
+        </div>
+        <div class="box">
+            <p class="title">Any comments or suggestions?</p>
+            <textarea name="suggestions" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
